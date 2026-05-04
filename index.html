@@ -3,32 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Film Celebration</title>
+    <title>Who Controls the Gaze?</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="topbar">
-      <a href="#top" class="brand">Film Celebration</a>
+      <a href="#top" class="brand">Who Controls the Gaze?</a>
       <nav aria-label="主导航">
-        <a href="#film">影片</a>
-        <a href="#program">单元</a>
-        <a href="#info">信息</a>
+        <a href="#film">Screening</a>
+        <a href="#intro">Introduction</a>
+        <a href="#archive">Archive</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
+        <img class="hero-image" src="assets/images/hero-gaze.jpg" alt="">
+        <div class="hero-overlay"></div>
         <div class="hero-copy">
           <p class="kicker">One-night online screening</p>
-          <h1>Film Celebration</h1>
-          <p>
-            一个简易线上电影节页面，主角就是你上传到 Google Drive 的这段视频。
-          </p>
-          <a class="button" href="#film">现在观看</a>
-        </div>
-        <div class="hero-frame" aria-hidden="true">
-          <div class="frame-line"></div>
-          <div class="frame-glow"></div>
+          <h1>Who Controls the Gaze?</h1>
+          <p class="subtitle">Reframing Women in Hollywood Cinema</p>
+          <a class="button" href="#film">Start Screening</a>
+          <p class="student-note">This is a student project.</p>
         </div>
       </section>
 
@@ -51,64 +48,73 @@
             <code>PUT_GOOGLE_DRIVE_FILE_ID_HERE</code> 换成分享链接里的文件 ID。
           </div>
         </div>
+      </section>
 
-        <div class="film-meta">
+      <section id="intro" class="section intro-section">
+        <div class="intro-heading">
+          <p class="kicker">View introduction</p>
+          <h2>From being seen to seeing</h2>
+        </div>
+        <div class="intro-copy">
           <p>
-            这里可以写影片简介：拍摄时间、地点、主题，或者你想让观众进入影片前知道的一句话。
+            This programme explores how women are represented in Hollywood cinema.
+            Across five films, it traces a shift from being seen to seeing, from
+            image to subject.
           </p>
-          <dl>
-            <div>
-              <dt>文件</dt>
-              <dd>C0030.MP4</dd>
-            </div>
-            <div>
-              <dt>来源</dt>
-            <dd>Google Drive embed</dd>
-            </div>
-            <div>
-              <dt>形式</dt>
-              <dd>Online screening</dd>
-            </div>
-          </dl>
+          <p>
+            It invites viewers to question how looking works — and how it can
+            change.
+          </p>
         </div>
+        <dl class="meta-list">
+          <div>
+            <dt>Theme</dt>
+            <dd>Women in Hollywood cinema</dd>
+          </div>
+          <div>
+            <dt>Format</dt>
+            <dd>Online screening</dd>
+          </div>
+          <div>
+            <dt>Source</dt>
+            <dd>Google Drive video embed</dd>
+          </div>
+        </dl>
       </section>
 
-      <section id="program" class="section program-section">
-        <div class="section-title">
-          <p class="kicker">Program</p>
-          <h2>放映单元</h2>
+      <section id="archive" class="section archive-section">
+        <div class="archive-heading">
+          <p class="kicker">Background</p>
+          <h2>Images of looking back</h2>
+          <p>
+            These stills are cropped from horizontal images into a poster-like
+            rhythm, so the final section keeps the feeling of the reference while
+            staying responsive on the web.
+          </p>
         </div>
-        <div class="program-grid">
-          <article>
-            <span>01</span>
-            <h3>Opening</h3>
-            <p>首页导入，让观众知道这是一个为这段影片搭建的小电影节。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Screening</h3>
-            <p>核心播放区，直接播放从 Google Drive 复制过来的 MP4 文件。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Notes</h3>
-            <p>可以继续加导演阐述、幕后照、时间表或观众留言。</p>
-          </article>
+        <div class="still-wall">
+          <figure class="still-card tall">
+            <img src="assets/images/stills/still-uma.jpg" alt="Film still of a woman seated in a diner.">
+          </figure>
+          <figure class="still-card">
+            <img src="assets/images/stills/still-lost.jpg" alt="Film still of a woman holding a cigarette in low light.">
+          </figure>
+          <figure class="still-card tall">
+            <img src="assets/images/stills/still-ladybird.jpg" alt="Film still of a woman seated across a desk.">
+          </figure>
+          <figure class="still-card">
+            <img src="assets/images/stills/still-piano.jpg" alt="Film still with a beam of light entering a room.">
+          </figure>
+          <figure class="still-card wide">
+            <img src="assets/images/stills/still-car.jpg" alt="Film still of a woman leaning into a car.">
+          </figure>
         </div>
-      </section>
-
-      <section id="info" class="section info-section">
-        <p class="kicker">Info</p>
-        <h2>下一步可以换文案、片名和视觉</h2>
-        <p>
-          现在先保证 Colab 可以跑、视频可以播。等这个版本通了，再把页面改得更像正式电影节：加海报、日程、片单、购票或报名入口。
-        </p>
       </section>
     </main>
 
     <footer>
-      <span>Film Celebration</span>
-      <span>Powered by Python + Colab</span>
+      <span>Who Controls the Gaze?</span>
+      <span>Reframing Women in Hollywood Cinema</span>
     </footer>
     <script src="config.js"></script>
     <script src="script.js"></script>
